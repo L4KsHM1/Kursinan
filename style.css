@@ -127,6 +127,27 @@ a {
   width: 35rem;
   /* margin-right: 10px; */
 }
+.buttons {
+  position: absolute;
+  width: 500px;
+  left: 0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.buttons a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: rgb(66, 4, 4);
+  border: solid 2px rgb(18, 12, 12);
+  z-index: 1;
+}
+.product-img:hover .buttons {
+  opacity: 1;
+}
+
 .customer {
   align-items: center;
   padding: 5rem;
