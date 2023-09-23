@@ -222,6 +222,9 @@ footer div {
   .all {
     margin: 2rem;
   }
+  .banner-text {
+    margin-top: 4rem;
+  }
 
   .banner-text h1 {
     font-size: 2rem;
