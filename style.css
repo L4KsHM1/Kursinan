@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 .all {
-  margin: 0 5rem;
+  margin: 0 5rem 0 5rem;
 }
 .navbar {
   display: flex;
@@ -216,4 +216,27 @@ footer div {
 }
 .foot p {
   color: rgb(148, 144, 144);
+}
+@media (max-width: 769px) {
+  .navbar a {
+    display: none;
+  }
+  .banner-text {
+  }
+  .banner-text h1 {
+    font-size: 3rem;
+    margin-left: 1.5rem;
+    margin-top: 0.1rem;
+  }
+  .banner-text p {
+    font-weight: 400;
+  }
+  .banner-content {
+    gap: 1rem;
+    align-items: center;
+    margin-top: 0;
+  }
+  .banner-content button {
+    margin-top: 0;
+  }
 }
