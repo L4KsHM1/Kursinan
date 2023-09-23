@@ -66,8 +66,7 @@ a {
 .banner-content button {
   margin-top: 2rem;
   padding: 1.5rem;
-  border-radius: 50%;
-  border: 2px;
+  border: 1px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -106,7 +105,6 @@ a {
 }
 .new-products h1 {
   font-size: 50px;
-
   width: 50%;
 }
 .new-products p {
@@ -221,22 +219,48 @@ footer div {
   .navbar a {
     display: none;
   }
-  .banner-text {
+  .all {
+    margin: 2rem;
   }
+
   .banner-text h1 {
-    font-size: 3rem;
-    margin-left: 1.5rem;
-    margin-top: 0.1rem;
-  }
-  .banner-text p {
-    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
   .banner-content {
-    gap: 1rem;
+    justify-content: center;
     align-items: center;
-    margin-top: 0;
+  }
+  .banner-content p {
+    font-weight: 300;
   }
   .banner-content button {
-    margin-top: 0;
+    border: 1px;
+  }
+  .product-sec {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .product-sec h3 {
+    font-size: 2.5rem;
+  }
+  .new-products {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+  }
+  .new-products h1 {
+    font-size: 2rem;
+    width: none;
+  }
+  .new-products p {
+    width: auto;
+  }
+  .product-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
