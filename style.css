@@ -74,8 +74,9 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
   background-color: #d7d4d4;
+  /* #d7d4d4 */
   padding: 1.5rem;
 }
 .product-sec h3 {
@@ -220,7 +221,8 @@ footer div {
     margin: 0 2rem 2rem 2rem;
   }
   .banner-text {
-    margin-top: 4rem;
+    margin-top: 5rem;
+    /* padding: 2rem; */
   }
 
   .banner-text h1 {
