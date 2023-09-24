@@ -284,7 +284,10 @@ footer div {
     text-align: start;
     padding: 1rem;
   }
-  footer {
-    display: none;
+  .foot {
+    flex-direction: column;
+  }
+  .foot-sec {
+    align-items: center;
   }
 }
