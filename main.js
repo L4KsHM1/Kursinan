@@ -52,12 +52,12 @@ let imgArry = [
   },
 ];
 produtArray.forEach((qa) => {
-  let qa = `<div class="quality">
+  let qstin = `<div class="quality">
     <h2>${qa.question}</h2>
     <p>${qa.ans}</p>
     <hr />
   </div>`;
-  productContainer.innerHTML += qa;
+  productContainer.innerHTML += qstin;
 });
 
 customerMsg.forEach((msg) => {
