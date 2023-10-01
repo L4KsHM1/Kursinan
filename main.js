@@ -1,6 +1,7 @@
 import "./style.css";
 const productContainer = document.querySelector(".product");
 const customerContainer = document.querySelector(".customer-msg");
+const imgContainer = document.querySelector(".product-img");
 const produtArray = [
   {
     question: "Quality is unquestionable",
@@ -30,6 +31,26 @@ let customerMsg = [
     position: "CEO Tokopedia",
   },
 ];
+
+let imgArry = [
+  {
+    imgUrl:
+      "https://images.unsplash.com/photo-1567538096621-38d2284b23ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
+  },
+  {
+    imgUrl:
+      "https://images.unsplash.com/photo-1506332088442-9e0024864f5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  },
+  {
+    imgUrl:
+      "https://images.unsplash.com/photo-1616627547584-bf28cee262db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  },
+  {
+    imgUrl:
+      //   "https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "https://images.unsplash.com/photo-1616627547584-bf28cee262db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+  },
+];
 produtArray.forEach((qa) => {
   let qa = `<div class="quality">
     <h2>${qa.question}</h2>
@@ -39,7 +60,7 @@ produtArray.forEach((qa) => {
   productContainer.innerHTML += qa;
 });
 
-customerContainer.forEach((msg) => {
+customerMsg.forEach((msg) => {
   let comment = `<div>
     <p>
       ${msg.comment}
@@ -49,4 +70,14 @@ customerContainer.forEach((msg) => {
     ${msg.position}
   </div>`;
   customerContainer.innerHTML += comment;
+});
+
+imgArry.forEach((img) => {
+  let url = `<div class="chair3">
+    <img
+      src="${img.imgUrl}"
+      alt=""
+    />
+  </div>`;
+  imgContainer.innerHTML += url;
 });
